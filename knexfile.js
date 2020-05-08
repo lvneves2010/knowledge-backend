@@ -1,9 +1,13 @@
-const { dbheroku, dblocal } = require( './.env' )
+const { dbheroku, dblocal, dbelephant } = require( './.env' )
 
 module.exports = {
     client: 'postgresql',
-    connection: dblocal,
-    // connection: 'postgres://jkwarzjwcnsjmu:32e033ab173a38cb7c0cc61ab6d6f6ade7cd22c32034603ceb46f91818140cb3@ec2-34-234-228-127.compute-1.amazonaws.com:5432/dc0a08uagqcrkb',
+    // connection: dblocal,
+
+    // postgres da IBMCloud(ElephantSQL)
+    connection: dbelephant,
+
+    // postgres Heroku
     // connection: dbheroku,
     pool: {
       min: 2,
