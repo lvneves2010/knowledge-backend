@@ -1,0 +1,4 @@
+---
+applications:
+  - name: leon-knowledge-base-blog-api
+    memory: 100M
